@@ -1,0 +1,12 @@
+<div id="navbar" style="width:250px">
+  <ul id="slide-out" class="side-nav fixed" style="width:250px">
+    <li><a routerLink="./"><i class="material-icons">home</i>Homepage</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Games</a></li>
+    <li *ngFor="let game of games">
+      <a class="waves-effect game" routerLink="game/{{game.shortname}}">{{game.name}}</a>
+    </li>
+  </ul>
+</div>
