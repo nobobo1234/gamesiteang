@@ -24,4 +24,10 @@ export class GamesService {
     return this.games;
   }
 
+  getGameNames(): Object {
+    let _object = {};
+    Object.values(this.games).forEach(game => _object[game.name] = null)
+    return _object;
+  }
+
 }

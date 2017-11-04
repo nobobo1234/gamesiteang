@@ -1,8 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { GamesService } from "../../services/games.service";
-import {Game} from "../../interfaces/game";
-import {ActivatedRoute, ParamMap} from '@angular/router';
+import { DomSanitizer } from '@angular/platform-browser';
 import 'rxjs/add/operator/switchMap';
+
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
+import { Game } from '../../interfaces/game';
+import { GamesService } from '../../services/games.service';
 
 @Component({
   selector: 'game',
@@ -12,13 +15,17 @@ import 'rxjs/add/operator/switchMap';
 export class GameComponent implements OnInit {
   game: Game;
 
-  constructor(private gamesService: GamesService, private route: ActivatedRoute) { }
+  constructor(private gamesService: GamesService, private route: ActivatedRoute, private router: Router, private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-    this.route.paramMap.switchMap((params: ParamMap) => {
-      let gamename = params.get('gamename');
-      this.game = this.gamesService.getGame(gamename);
+    this.route.params.subscribe(params => {
+      let gameName = this.route.snapshot.params['gamename'];
+      this.game = this.gamesService.getGame(gameName);
     });
+  }
+
+  get gameurl() {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.game.url);
   }
 
 }

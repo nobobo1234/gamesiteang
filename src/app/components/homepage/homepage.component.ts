@@ -1,3 +1,4 @@
+import { GamesService } from '../../services/games.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private gamesService: GamesService) { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  applySearch(val: string) {
+    console.log(val);
   }
 
 }

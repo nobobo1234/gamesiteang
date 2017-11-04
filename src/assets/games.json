@@ -49,82 +49,82 @@
   },
   "flappybird": {
     "name": "Flappy Bird",
-    "url": "games\/flappybird.swf"
+    "url": "../../assets/games/flappybird.swf"
   },
   "arcalona": {
     "name": "Arcalona",
-    "url": "games\/arcalona.swf"
+    "url": "../../assets/games/arcalona.swf"
   },
   "shop_empire": {
     "name": "Shop Empire",
-    "url": "games\/shop_empire.swf"
+    "url": "../../assets/games/shop_empire.swf"
   },
   "feedus_4": {
     "name": "Feed Us 4",
-    "url": "games\/feedus_4.swf"
+    "url": "../../assets/games/feedus_4.swf"
   },
   "dawnofthesniper": {
     "name": "Dawn of the Sniper",
-    "url": "games\/dawnofthesniper.swf"
+    "url": "../../assets/games/dawnofthesniper.swf"
   },
   "theimpossiblequiz": {
     "name": "The impossible Quiz",
-    "url": "games\/theimpossiblequiz.swf"
+    "url": "../../assets/games/theimpossiblequiz.swf"
   },
   "raccoonracing": {
     "name": "Raccoon Racing",
-    "url": "games\/raccoonracing.swf"
+    "url": "../../assets/games/raccoonracing.swf"
   },
   "kingdomrush_frontiers": {
     "name": "Kingdom Rush Frontiers",
-    "url": "games\/kingdomrush_frontiers.swf"
+    "url": "../../assets/games/kingdomrush_frontiers.swf"
   },
   "grumpybreaks": {
     "name": "Grumpy Breaks",
-    "url": "games\/grumpybreaks.swf"
+    "url": "../../assets/games/grumpybreaks.swf"
   },
   "shopempire_2": {
     "name": "Shop Empire 2",
-    "url": "games\/shopempire_2.swf"
+    "url": "../../assets/games/shopempire_2.swf"
   },
   "worldshardestgame_3": {
     "name": "Worlds Hardest Game 3",
-    "url": "games\/worldshardestgame_3.swf"
+    "url": "../../assets/games/worldshardestgame_3.swf"
   },
   "papas_bakeria": {
     "name": "Papas Bakeria",
-    "url": "games\/papas_bakeria.swf"
+    "url": "../../assets/games/papas_bakeria.swf"
   },
   "papas_donuteria": {
     "name": "Papas Donuteria",
-    "url": "games\/papas_donuteria.swf"
+    "url": "../../assets/games/papas_donuteria.swf"
   },
   "papas_freezeria": {
     "name": "Papas Freezeria",
-    "url": "games\/papas_freezeria.swf"
+    "url": "../../assets/games/papas_freezeria.swf"
   },
   "papalouie_3": {
     "name": "Papa Louie 3",
-    "url": "games\/papalouie_3.swf"
+    "url": "../../assets/games/papalouie_3.swf"
   },
   "hauntthehouse": {
     "name": "Haunt the House",
-    "url": "games\/hauntthehouse.swf"
+    "url": "../../assets/games/hauntthehouse.swf"
   },
   "growrpg": {
     "name": "Grow RPG",
-    "url": "games\/growrpg.swf"
+    "url": "../../assets/games/growrpg.swf"
   },
   "sportsheads_basketball": {
     "name": "Sportsheads Basketball",
-    "url": "games\/sportsheads_basketball.swf"
+    "url": "../../assets/games/sportsheads_basketball.swf"
   },
   "perfectpitch": {
     "name": "Perfect Pitch",
-    "url": "games\/perfectpitch.swf"
+    "url": "../../assets/games/perfectpitch.swf"
   },
   "antizombie_bunker": {
     "name": "Antizombie Bunker",
-    "url": "games\/antizombie_bunker.swf"
+    "url": "../../assets/games/antizombie_bunker.swf"
   }
 }
