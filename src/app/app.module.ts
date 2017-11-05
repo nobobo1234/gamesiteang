@@ -19,7 +19,7 @@ const appRoutes: Routes = [
     path: 'game/:gamename',
     component: GameComponent
   }
-]
+];
 
 @NgModule({
   declarations: [

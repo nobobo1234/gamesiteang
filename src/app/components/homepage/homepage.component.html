@@ -4,9 +4,13 @@
 <div class="input-field col s6">
   <label>Search through our games</label>
   <input class="validate"
-    name="gameinput"
-    materialize="autocomplete"
-    [materializeParams]="[{ data: this.gamesService.getGameNames(), limit: 10, minLength: 2 }]"
-    (keyup.enter)="this.applySearch($event)"
-    type="text">
+         name="gameinput"
+         materialize="autocomplete"
+         [materializeParams]="[{ data: this.gamesService.getGameNames(),
+            limit: 10,
+            onAutoComplete: (val) => this.applySearch(val),
+            minLength: 2 }]"
+         (keyup.enter)="applySearch($event)"
+         type="text">
 </div>
+<p>{{this.value}}</p>
