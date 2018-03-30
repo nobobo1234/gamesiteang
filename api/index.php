@@ -50,7 +50,7 @@ $klein->respond('POST', '/games/api/games/add', function($request, $response) {
     if(!$password) {
         return 'Please provide a password';
     }
-    if($password !== '&&!!nola') {
+    if($password !== '****') {
         return 'Password is incorrect';
     }
 
@@ -68,7 +68,7 @@ $klein->respond('POST', '/games/api/games/delete', function($request, $response)
     if(!$password) {
         return 'Please provide a password';
     }
-    if($password !== '&&!!nola') {
+    if($password !== '****') {
         return 'Password is incorrect';
     }
 
