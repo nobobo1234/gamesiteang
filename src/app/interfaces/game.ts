@@ -1,5 +1,5 @@
 export interface Game {
-  name: string;
+  gamename: string;
   url: string;
   shortname: string;
 }

@@ -6,11 +6,8 @@
   <input class="validate"
          name="gameinput"
          materialize="autocomplete"
-         [materializeParams]="[{ data: this.gamesService.getGameNames(),
-            limit: 10,
-            onAutoComplete: (val) => this.applySearch(val),
-            minLength: 2 }]"
+         [materializeParams]="this.options"
          (keyup.enter)="applySearch($event)"
          type="text">
+  <div class="pointer" (click)="navigateToAdd()">Add a game</div>
 </div>
-<p>{{this.value}}</p>

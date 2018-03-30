@@ -10,9 +10,12 @@ import {Game} from "../../interfaces/game";
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
-  value: string;
+  options;
 
   constructor(private gamesService: GamesService, private router: Router, private route: ActivatedRoute) {
+    this.options = [{ data: this.gamesService.getGameNames(),
+      limit: 10,
+      minLength: 2 }];
   }
 
   ngOnInit() {
@@ -20,12 +23,15 @@ export class HomepageComponent implements OnInit {
 
   applySearch(event) {
     let game: Game;
-    console.log(event);
     if(typeof event === 'string') {
-      game = this.gamesService.getGames().find((e) => e.name === event);
+      game = this.gamesService.getGames().find((e) => e.gamename === event);
     } else {
-      game = this.gamesService.getGames().find((e) => e.name === event.target.value);
+      game = this.gamesService.getGames().find((e) => e.gamename === event.target.value);
     }
     this.router.navigate([`./game/${game.shortname}`], {relativeTo: this.route});
+  }
+
+  navigateToAdd() {
+    this.router.navigate([`./add`], { relativeTo: this.route });
   }
 }

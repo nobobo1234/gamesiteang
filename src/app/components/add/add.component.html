@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <div class="row">
+    <form (ngSubmit)="submitForm($event)" class="col s12">
+      <div #alert class="d-none">
+        {{message}}
+      </div>
+      <div class="row">
+        <div class="input field col s12">
+          <label for="option">Select action</label>
+          <select #select name="option" class="browser-default" (change)="onChange(select)">
+            <option value="create">Add Game</option>
+            <option value="delete">Delete Game</option>
+          </select>
+        </div>
+      </div>
+      <div class="row" [ngSwitch]="select.value">
+        <div class="input field col s6" *ngSwitchCase="select.value === 'create' || select.value === 'delete' ? select.value : ''">
+          <label for="name">Name of the game</label>
+          <input type="text" name="name" placeholder="Project name">
+        </div>
+        <div class="input field col s6" *ngSwitchCase="select.value === 'create' ? select.value : ''">
+          <label for="name">Url of the game</label>
+          <input type="text" name="url" placeholder="Project name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input field col s12">
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Password">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>

@@ -6,7 +6,7 @@
     </li>
     <li><a class="subheader">Games</a></li>
     <li *ngFor="let game of games">
-      <a class="waves-effect game" routerLink="game/{{game.shortname}}">{{game.name}}</a>
+      <a class="waves-effect game" [routerLink]="['game', game.shortname]">{{game.gamename}}</a>
     </li>
   </ul>
 </div>

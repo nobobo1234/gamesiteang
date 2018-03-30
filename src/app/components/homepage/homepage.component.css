@@ -1,0 +1,9 @@
+.pointer:hover {
+    cursor: pointer;
+}
+
+.pointer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
